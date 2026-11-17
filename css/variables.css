@@ -1,0 +1,73 @@
+/* Design Tokens */
+:root {
+  /* Colors */
+  --color-accent: #F95858;
+  --color-accent-hover: #E44646;
+  --color-teal: #2CD5C4;
+  --color-text-dark: #3A3A3C;
+  --color-text: #666A6E;
+  --color-muted: #9AA0A6;
+  --color-bg-light: #F0F3F4;
+  --color-border: #E1E5E8;
+  --color-footer: #2A2A2D;
+  --color-footer-input: #36363A;
+  --color-overlay: rgba(30, 32, 36, 0.82);
+  --color-white: #FFFFFF;
+
+  /* Fonts */
+  --font-heading: 'Oswald', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+  --font-logo: 'Dancing Script', cursive;
+
+  /* Typography sizes (Mobile 375 base) */
+  --fs-h1: 26px;
+  --fs-cta: 22px;
+  --fs-h2: 18px;
+  --fs-h3: 15px;
+  --fs-nav: 12px;
+  --fs-body: 14px;
+  --lh-body: 22px;
+  --fs-quote: 16px;
+  --fs-stat: 38px;
+  --fs-logo: 22px;
+  --logo-circle: 34px;
+
+  /* Layout & Spacing (Mobile 375 base) */
+  --container-max: 1100px;
+  --container-pad: 20px;
+  --section-gap: 56px;
+  --header-height: 68px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --fs-h1: 32px;
+    --fs-cta: 24px;
+    --fs-nav: 13px;
+    --fs-quote: 19px;
+    --fs-stat: 40px;
+    --fs-logo: 26px;
+    --logo-circle: 40px;
+
+    --container-pad: 40px;
+    --section-gap: 72px;
+    --header-height: 84px;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --fs-h1: 40px;
+    --fs-cta: 28px;
+    --fs-quote: 22px;
+    --fs-stat: 48px;
+
+    --container-pad: 90px;
+    --section-gap: 90px;
+    --header-height: 92px;
+  }
+}

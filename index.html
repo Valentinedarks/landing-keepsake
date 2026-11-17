@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keepsake — Digital &amp; Branding Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Open+Sans:wght@300;400;700&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top">
+  <!-- Pure CSS Mobile Menu Toggle -->
+  <input type="checkbox" id="nav-toggle" class="visually-hidden" aria-hidden="true">
+
+  <!-- Fixed Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="Keepsake Home">
+        <span class="logo-mark" aria-hidden="true">K</span>
+        <span>eepsake</span>
+      </a>
+
+      <!-- Desktop & Tablet Navigation -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#top" class="nav-link is-active">Home</a></li>
+          <li><a href="#services" class="nav-link">About Us</a></li>
+          <li><a href="#works" class="nav-link">Our Works</a></li>
+          <li><a href="#journal" class="nav-link">Journal</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#works" class="fav-btn" aria-label="Favourites">
+          <svg width="16" height="15" viewBox="0 0 16 15" fill="currentColor" aria-hidden="true">
+            <path d="M8 14.25l-1.15-1.05C2.75 9.5 0 7.02 0 3.98 0 1.5 1.94 0 4.4 0 5.8 0 7.14.65 8 1.68 8.86.65 10.2 0 11.6 0 14.06 0 16 1.5 16 3.98c0 3.04-2.75 5.52-6.85 9.22L8 14.25z"/>
+          </svg>
+        </a>
+      </nav>
+
+      <!-- Mobile Burger Button -->
+      <label for="nav-toggle" class="burger-btn" role="button" tabindex="0" aria-label="Toggle navigation menu" aria-controls="mobile-menu">
+        <svg class="icon-burger" width="22" height="16" viewBox="0 0 22 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="0" y1="1" x2="22" y2="1"/>
+          <line x1="0" y1="8" x2="22" y2="8"/>
+          <line x1="0" y1="15" x2="22" y2="15"/>
+        </svg>
+        <svg class="icon-close" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <line x1="2" y1="2" x2="18" y2="18"/>
+          <line x1="18" y1="2" x2="2" y2="18"/>
+        </svg>
+      </label>
+    </div>
+  </header>
+
+  <!-- Mobile Open Menu Drawer -->
+  <div id="mobile-menu" class="mobile-drawer" role="dialog" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-top">
+      <nav aria-label="Mobile Primary Navigation">
+        <ul class="mobile-nav-list">
+          <li class="mobile-nav-item">
+            <a href="#top" class="mobile-nav-link is-active">
+              <span>Home</span>
+              <svg class="mobile-nav-chevron" width="8" height="14" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <polyline points="1 1 7 7 1 13"/>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#services" class="mobile-nav-link">
+              <span>About Us</span>
+              <svg class="mobile-nav-chevron" width="8" height="14" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <polyline points="1 1 7 7 1 13"/>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#works" class="mobile-nav-link">
+              <span>Our Works</span>
+              <svg class="mobile-nav-chevron" width="8" height="14" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <polyline points="1 1 7 7 1 13"/>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#journal" class="mobile-nav-link">
+              <span>Journal</span>
+              <svg class="mobile-nav-chevron" width="8" height="14" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <polyline points="1 1 7 7 1 13"/>
+              </svg>
+            </a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="#contact" class="mobile-nav-link">
+              <span>Contact</span>
+              <svg class="mobile-nav-chevron" width="8" height="14" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <polyline points="1 1 7 7 1 13"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="mobile-drawer-actions">
+        <a href="#contact" class="btn btn-primary">
+          <svg width="15" height="12" viewBox="0 0 15 12" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <rect x="1" y="1" width="13" height="10" rx="0.5"/>
+            <polyline points="1 1.5 7.5 6.5 14 1.5"/>
+          </svg>
+          <span>Contact Us</span>
+        </a>
+        <a href="#works" class="btn btn-secondary">
+          <svg class="mobile-fav-heart" width="15" height="14" viewBox="0 0 16 15" fill="currentColor" aria-hidden="true">
+            <path d="M8 14.25l-1.15-1.05C2.75 9.5 0 7.02 0 3.98 0 1.5 1.94 0 4.4 0 5.8 0 7.14.65 8 1.68 8.86.65 10.2 0 11.6 0 14.06 0 16 1.5 16 3.98c0 3.04-2.75 5.52-6.85 9.22L8 14.25z"/>
+          </svg>
+          <span>Favourites</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="mobile-drawer-footer">
+      <p class="mobile-say-hello">Say Hello</p>
+      <a href="mailto:hello@keepsake.studio" class="mobile-contact-link">hello@keepsake.studio</a>
+      <a href="tel:+442079460000" class="mobile-contact-link">+44 20 7946 0000</a>
+      <ul class="mobile-socials">
+        <li><a href="#contact" class="social-link social-rss" aria-label="RSS">rss</a></li>
+        <li><a href="#contact" class="social-link social-fb" aria-label="Facebook">f</a></li>
+        <li><a href="#contact" class="social-link social-tw" aria-label="Twitter">tw</a></li>
+        <li><a href="#contact" class="social-link social-dr" aria-label="Dribbble">dr</a></li>
+        <li><a href="#contact" class="social-link social-pin" aria-label="Pinterest">p</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">We're Keepsake, a digital &amp; branding agency</h1>
+          <p class="hero-text">Specializing in web design, poster, motion video, based in London. We love to turn ideas into beautiful things.</p>
+          <div class="hero-actions">
+            <a href="#works" class="btn btn-primary">See our works</a>
+            <a href="#contact" class="btn btn-secondary">Get in touch</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Awesome Works (Portfolio) -->
+    <section id="works" class="section works-section">
+      <div class="container">
+        <!-- Radio inputs for pure-CSS category filtering (:checked ~) -->
+        <input type="radio" name="works-filter" id="filter-all" class="visually-hidden" checked>
+        <input type="radio" name="works-filter" id="filter-branding" class="visually-hidden">
+        <input type="radio" name="works-filter" id="filter-identity" class="visually-hidden">
+        <input type="radio" name="works-filter" id="filter-print" class="visually-hidden">
+        <input type="radio" name="works-filter" id="filter-web" class="visually-hidden">
+        <input type="radio" name="works-filter" id="filter-motion" class="visually-hidden">
+        <input type="checkbox" id="load-more-toggle" class="visually-hidden">
+
+        <div class="works-top">
+          <h2 class="section-title">Our Awesome Works</h2>
+          <div class="filter-chips" role="group" aria-label="Filter projects by category">
+            <label for="filter-all" class="chip-label">All</label>
+            <label for="filter-branding" class="chip-label">Branding</label>
+            <label for="filter-identity" class="chip-label">Identity</label>
+            <label for="filter-print" class="chip-label">Print</label>
+            <label for="filter-web" class="chip-label">Web</label>
+            <label for="filter-motion" class="chip-label">Motion</label>
+          </div>
+        </div>
+
+        <div class="works-grid">
+          <article class="work-card" data-category="branding">
+            <a href="#works" class="work-link">
+              <img src="images/work-1.webp" alt="Clothes Tag branding mockup" width="760" height="600" class="work-img">
+              <div class="work-overlay">
+                <span class="work-plus" aria-hidden="true">+</span>
+                <h3 class="work-title">Clothes Tag</h3>
+                <span class="work-divider" aria-hidden="true"></span>
+                <span class="work-category">Branding</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card" data-category="identity">
+            <a href="#works" class="work-link">
+              <img src="images/work-2.webp" alt="PiecePaper brand identity" width="760" height="600" class="work-img">
+              <div class="work-overlay">
+                <span class="work-plus" aria-hidden="true">+</span>
+                <h3 class="work-title">PiecePaper</h3>
+                <span class="work-divider" aria-hidden="true"></span>
+                <span class="work-category">Identity</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card" data-category="print">
+            <a href="#works" class="work-link">
+              <img src="images/work-3.webp" alt="Vinyl Album Cover print design" width="760" height="600" class="work-img">
+              <div class="work-overlay">
+                <span class="work-plus" aria-hidden="true">+</span>
+                <h3 class="work-title">Vinyl Sleeve</h3>
+                <span class="work-divider" aria-hidden="true"></span>
+                <span class="work-category">Print</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card" data-category="print">
+            <a href="#works" class="work-link">
+              <img src="images/work-4.webp" alt="Vol. 16 Editorial Magazine" width="760" height="600" class="work-img" loading="lazy">
+              <div class="work-overlay">
+                <span class="work-plus" aria-hidden="true">+</span>
+                <h3 class="work-title">Editorial Vol. 16</h3>
+                <span class="work-divider" aria-hidden="true"></span>
+                <span class="work-category">Print</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card" data-category="web">
+            <a href="#works" class="work-link">
+              <img src="images/work-5.webp" alt="Keepsake Interactive Web Interface" width="760" height="600" class="work-img" loading="lazy">
+              <div class="work-overlay">
+                <span class="work-plus" aria-hidden="true">+</span>
+                <h3 class="work-title">Digital Platform</h3>
+                <span class="work-divider" aria-hidden="true"></span>
+                <span class="work-category">Web</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card" data-category="print">
+            <a href="#works" class="work-link">
+              <img src="images/work-6.webp" alt="Minimalist Open Brochure" width="760" height="600" class="work-img" loading="lazy">
+              <div class="work-overlay">
+                <span class="work-plus" aria-hidden="true">+</span>
+                <h3 class="work-title">Studio Lookbook</h3>
+                <span class="work-divider" aria-hidden="true"></span>
+                <span class="work-category">Print</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card" data-category="motion">
+            <a href="#works" class="work-link">
+              <img src="images/work-7.webp" alt="WallSt. Motion Title Sequence" width="760" height="600" class="work-img" loading="lazy">
+              <div class="work-overlay">
+                <span class="work-plus" aria-hidden="true">+</span>
+                <h3 class="work-title">WallSt. Reel</h3>
+                <span class="work-divider" aria-hidden="true"></span>
+                <span class="work-category">Motion</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card" data-category="identity">
+            <a href="#works" class="work-link">
+              <img src="images/work-8.webp" alt="Corporate Business Card Identity" width="760" height="600" class="work-img" loading="lazy">
+              <div class="work-overlay">
+                <span class="work-plus" aria-hidden="true">+</span>
+                <h3 class="work-title">Stationery Suite</h3>
+                <span class="work-divider" aria-hidden="true"></span>
+                <span class="work-category">Identity</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card" data-category="branding">
+            <a href="#works" class="work-link">
+              <img src="images/work-9.webp" alt="Seal Fabric Textile Branding" width="760" height="600" class="work-img" loading="lazy">
+              <div class="work-overlay">
+                <span class="work-plus" aria-hidden="true">+</span>
+                <h3 class="work-title">Seal Fabric</h3>
+                <span class="work-divider" aria-hidden="true"></span>
+                <span class="work-category">Branding</span>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <div class="works-more">
+          <label for="load-more-toggle" class="btn btn-secondary works-more-btn" role="button" tabindex="0">Load more works</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call To Action -->
+    <section class="cta-section">
+      <div class="container">
+        <h2 class="cta-title">Would you love to work with us?</h2>
+        <a href="#contact" class="btn btn-primary">
+          <svg width="15" height="12" viewBox="0 0 15 12" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <rect x="1" y="1" width="13" height="10" rx="0.5"/>
+            <polyline points="1 1.5 7.5 6.5 14 1.5"/>
+          </svg>
+          <span>Contact Us</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- What Do We Do (Services) -->
+    <section id="services" class="section services-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">What Do We Do</h2>
+          <p class="section-subtitle">Maecenas sed diam eget risus varius blandit sit amet non magna. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-item">
+            <div class="service-icon-wrap" aria-hidden="true">
+              <svg width="36" height="28" viewBox="0 0 36 28" fill="none">
+                <rect x="2" y="2" width="32" height="20" rx="2" fill="#465A65"/>
+                <rect x="5" y="5" width="26" height="14" fill="#92CFC6"/>
+                <rect x="14" y="22" width="8" height="3" fill="#78909C"/>
+                <rect x="10" y="25" width="16" height="2" fill="#465A65"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Web Design</h3>
+            <p class="service-desc">Donec elit non mi porta gravida eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+          </article>
+
+          <article class="service-item">
+            <div class="service-icon-wrap" aria-hidden="true">
+              <svg width="36" height="28" viewBox="0 0 36 28" fill="none">
+                <rect x="4" y="3" width="28" height="22" rx="3" fill="#465A65"/>
+                <rect x="8" y="7" width="20" height="14" rx="1" fill="#82B1FF"/>
+                <circle cx="30" cy="10" r="1.5" fill="#CFD8DC"/>
+                <circle cx="30" cy="15" r="1.5" fill="#CFD8DC"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Motion Video</h3>
+            <p class="service-desc">Aenean lacinia bibendum nulla sed consectetur. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          </article>
+
+          <article class="service-item">
+            <div class="service-icon-wrap" aria-hidden="true">
+              <svg width="36" height="28" viewBox="0 0 36 28" fill="none">
+                <rect x="9" y="2" width="18" height="8" fill="#FFD54F"/>
+                <rect x="4" y="10" width="28" height="12" rx="2" fill="#546E7A"/>
+                <rect x="9" y="17" width="18" height="9" fill="#ECEFF1"/>
+                <line x1="12" y1="20" x2="24" y2="20" stroke="#90A4AE" stroke-width="1.5"/>
+                <line x1="12" y1="23" x2="20" y2="23" stroke="#90A4AE" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Print Design</h3>
+            <p class="service-desc">Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+          </article>
+
+          <article class="service-item">
+            <div class="service-icon-wrap" aria-hidden="true">
+              <svg width="32" height="28" viewBox="0 0 32 28" fill="none">
+                <path d="M16 26.5L13.8 24.5C6.2 17.6 1.2 13.1 1.2 7.6C1.2 3.1 4.7 0 9.1 0C11.6 0 14 1.2 16 3C18 1.2 20.4 0 22.9 0C27.3 0 30.8 3.1 30.8 7.6C30.8 13.1 25.8 17.6 18.2 24.5L16 26.5Z" fill="#F95858"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Illustration</h3>
+            <p class="service-desc">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="stats-section" aria-label="Agency Statistics">
+      <div class="container">
+        <div class="stats-row">
+          <div class="stat-item">
+            <span class="stat-number">120+</span>
+            <span class="stat-label">Projects Shipped</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">8</span>
+            <span class="stat-label">Years in London</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">64</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">15</span>
+            <span class="stat-label">Design Awards</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients & Kind Words -->
+    <section class="section clients-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Clients &amp; Kind Words</h2>
+          <p class="section-subtitle">Teams we have partnered with across London and beyond.</p>
+        </div>
+
+        <ul class="clients-logos" aria-label="Client Logos">
+          <li class="client-logo-item">
+            <svg width="96" height="24" viewBox="0 0 96 24" fill="currentColor" role="img" aria-label="Nordly">
+              <text x="48" y="17" text-anchor="middle" font-family="Oswald, sans-serif" font-size="15" letter-spacing="2">NORDLY</text>
+            </svg>
+          </li>
+          <li class="client-logo-item">
+            <svg width="96" height="24" viewBox="0 0 96 24" fill="currentColor" role="img" aria-label="Brampton">
+              <text x="48" y="17" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="16">Brampton</text>
+            </svg>
+          </li>
+          <li class="client-logo-item">
+            <svg width="96" height="24" viewBox="0 0 96 24" fill="currentColor" role="img" aria-label="Kilo">
+              <text x="48" y="17" text-anchor="middle" font-family="Oswald, sans-serif" font-size="15" letter-spacing="4">K I L O</text>
+            </svg>
+          </li>
+          <li class="client-logo-item">
+            <svg width="96" height="24" viewBox="0 0 96 24" fill="currentColor" role="img" aria-label="Pinewood">
+              <text x="48" y="17" text-anchor="middle" font-family="Open Sans, sans-serif" font-weight="600" font-size="14">pinewood</text>
+            </svg>
+          </li>
+          <li class="client-logo-item">
+            <svg width="96" height="24" viewBox="0 0 96 24" fill="currentColor" role="img" aria-label="Vela">
+              <text x="48" y="17" text-anchor="middle" font-family="Oswald, sans-serif" font-size="15" letter-spacing="2">VELA</text>
+            </svg>
+          </li>
+          <li class="client-logo-item">
+            <svg width="96" height="24" viewBox="0 0 96 24" fill="currentColor" role="img" aria-label="Oslo">
+              <text x="48" y="17" text-anchor="middle" font-family="Open Sans, sans-serif" font-weight="300" font-size="15" letter-spacing="1">oslo</text>
+            </svg>
+          </li>
+        </ul>
+
+        <blockquote class="testimonial-box">
+          <svg class="testimonial-quote-icon" width="24" height="18" viewBox="0 0 24 18" fill="currentColor" aria-hidden="true">
+            <path d="M0 18V9.6C0 3.7 3.5 0.6 9.6 0v3.8C6.3 4.3 4.8 6.1 4.6 9h4.8v9H0zm14.4 0V9.6c0-5.9 3.5-9 9.6-9.6v3.8c-3.3.5-4.8 2.3-5 5.2h4.8v9h-9.4z"/>
+          </svg>
+          <p class="testimonial-text">Keepsake turned a vague product brief into an identity our whole team is proud of. Fast, thoughtful, zero fluff — and obsessed with the details.</p>
+          <footer class="testimonial-footer">
+            <div class="testimonial-author">
+              <span class="author-avatar" aria-hidden="true">CL</span>
+              <div>
+                <cite class="author-name" style="font-style: normal;">Clara Lindqvist</cite>
+                <p class="author-role">Head of Brand, Nordly</p>
+              </div>
+            </div>
+            <div class="slider-dots" aria-hidden="true">
+              <span class="slider-dot is-active"></span>
+              <span class="slider-dot"></span>
+              <span class="slider-dot"></span>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- From The Journal -->
+    <section id="journal" class="section journal-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">From The Journal</h2>
+          <p class="section-subtitle">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+
+        <div class="journal-list">
+          <article class="journal-card">
+            <img src="images/journal-1.webp" alt="Editorial typography layout" width="300" height="300" class="journal-thumb" loading="lazy">
+            <div class="journal-body">
+              <p class="journal-meta">Oct 13, 2014 / Identity</p>
+              <h3 class="journal-title"><a href="#journal">Sollicitudin Tortor Inceptos</a></h3>
+              <p class="journal-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+              <a href="#journal" class="journal-readmore">Read more</a>
+            </div>
+          </article>
+
+          <article class="journal-card">
+            <img src="images/journal-2.webp" alt="Minimalist branding system" width="300" height="300" class="journal-thumb" loading="lazy">
+            <div class="journal-body">
+              <p class="journal-meta">Oct 23, 2014 / Branding</p>
+              <h3 class="journal-title"><a href="#journal">Amet Inceptos Fringilla Fusce</a></h3>
+              <p class="journal-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+              <a href="#journal" class="journal-readmore">Read more</a>
+            </div>
+          </article>
+
+          <article class="journal-card">
+            <img src="images/journal-3.webp" alt="Design thinking workspace" width="300" height="300" class="journal-thumb" loading="lazy">
+            <div class="journal-body">
+              <p class="journal-meta">Sep 19, 2014 / Identity</p>
+              <h3 class="journal-title"><a href="#journal">Cursus Malesuada Justo</a></h3>
+              <p class="journal-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+              <a href="#journal" class="journal-readmore">Read more</a>
+            </div>
+          </article>
+
+          <article class="journal-card">
+            <img src="images/journal-4.webp" alt="Creative strategy notes" width="300" height="300" class="journal-thumb" loading="lazy">
+            <div class="journal-body">
+              <p class="journal-meta">Sep 27, 2014 / Branding</p>
+              <h3 class="journal-title"><a href="#journal">Ornare Cursus Bibendum Purus</a></h3>
+              <p class="journal-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+              <a href="#journal" class="journal-readmore">Read more</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Newsletter Form -->
+        <div id="newsletter-subscribed" class="footer-newsletter">
+          <h2 class="footer-heading">Newsletter</h2>
+          <div class="newsletter-fields">
+            <p class="newsletter-desc">Fresh case studies and design notes, once a month.</p>
+            <form action="#newsletter-subscribed" class="newsletter-form">
+              <div class="newsletter-controls">
+                <label for="newsletter-email" class="visually-hidden">Your email address</label>
+                <input
+                  type="email"
+                  id="newsletter-email"
+                  name="email"
+                  class="newsletter-input"
+                  placeholder="Your email address"
+                  required
+                  aria-describedby="newsletter-error-msg"
+                >
+                <button type="submit" class="btn btn-primary newsletter-submit">Subscribe</button>
+              </div>
+              <p id="newsletter-error-msg" class="newsletter-error" role="alert">Please enter a valid email address.</p>
+              <label class="newsletter-consent">
+                <input type="checkbox" name="privacy" class="newsletter-checkbox" required>
+                <span>I agree to the privacy policy</span>
+              </label>
+            </form>
+          </div>
+
+          <div class="newsletter-success" role="status">
+            <span class="newsletter-success-icon" aria-hidden="true">
+              <svg width="12" height="10" viewBox="0 0 12 10" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="1.5 5 4.5 8 10.5 2"/>
+              </svg>
+            </span>
+            <span>You're in! Check your inbox to confirm.</span>
+          </div>
+          <p class="newsletter-success-note">One email a month. No spam, unsubscribe anytime.</p>
+        </div>
+
+        <!-- Navigation Link Columns -->
+        <div class="footer-nav-columns">
+          <div class="footer-col">
+            <h2 class="footer-heading">Studio</h2>
+            <ul class="footer-links">
+              <li><a href="#services" class="footer-link">About Us</a></li>
+              <li><a href="#works" class="footer-link">Our Works</a></li>
+              <li><a href="#journal" class="footer-link">Journal</a></li>
+              <li><a href="#services" class="footer-link">Careers</a></li>
+              <li><a href="#contact" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h2 class="footer-heading">Services</h2>
+            <ul class="footer-links">
+              <li><a href="#services" class="footer-link">Web Design</a></li>
+              <li><a href="#services" class="footer-link">Motion Video</a></li>
+              <li><a href="#services" class="footer-link">Print Design</a></li>
+              <li><a href="#services" class="footer-link">Illustration</a></li>
+              <li><a href="#services" class="footer-link">Brand Identity</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <ul class="social-list" aria-label="Social Media">
+          <li><a href="#contact" class="social-link social-rss" aria-label="RSS">rss</a></li>
+          <li><a href="#contact" class="social-link social-fb" aria-label="Facebook">f</a></li>
+          <li><a href="#contact" class="social-link social-tw" aria-label="Twitter">tw</a></li>
+          <li><a href="#contact" class="social-link social-dr" aria-label="Dribbble">dr</a></li>
+          <li><a href="#contact" class="social-link social-pin" aria-label="Pinterest">p</a></li>
+        </ul>
+        <p class="footer-copy">&copy; 2014 Keepsake. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fixed Back-to-Top Button -->
+  <a href="#top" class="back-to-top" aria-label="Back to top">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <line x1="7" y1="13" x2="7" y2="2"/>
+      <polyline points="2 7 7 2 12 7"/>
+    </svg>
+  </a>
+</body>
+</html>
