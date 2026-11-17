@@ -4,7 +4,7 @@
 
 ## Демо
 
-- **Live Demo (GitHub Pages):** `https://<username>.github.io/landing-keepsake/` *(замініть `<username>` на ваш логін GitHub після публікації)*
+- **Live Demo (GitHub Pages):** `https://Valentinedarks.github.io/landing-keepsake/`
 
 ## Структура проєкту
 
